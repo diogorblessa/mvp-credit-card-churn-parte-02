@@ -1,0 +1,13 @@
+# Config e materiais locais (não versionar)
+.claude/
+CLAUDE.md
+COMMIT_GUIDELINES.md
+docs/desafio_mvp_sprint_02.md
+docs/superpowers/
+notebooks/Template_MVP_ML_Analytics_20261.ipynb
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.env
+*.pkl
