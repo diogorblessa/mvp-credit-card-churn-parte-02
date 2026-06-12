@@ -8,6 +8,7 @@ notebooks/Template_MVP_ML_Analytics_20261.ipynb
 
 # Python / Jupyter
 __pycache__/
+.venv/
 .ipynb_checkpoints/
 .env
 *.pkl
