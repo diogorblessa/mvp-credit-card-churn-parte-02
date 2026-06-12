@@ -1,0 +1,21 @@
+{
+  "modelo": "HistGradientBoosting (otimizado)",
+  "semente": 7,
+  "limiar_decisao": 0.5,
+  "melhores_hiperparametros": {
+    "model__l2_regularization": 1.0397633727625066,
+    "model__learning_rate": 0.2617500287365414,
+    "model__max_iter": 326,
+    "model__max_leaf_nodes": 27,
+    "model__min_samples_leaf": 16
+  },
+  "f1_validacao": 0.9199,
+  "f1_teste": 0.906,
+  "versoes": {
+    "python": "3.14.2",
+    "numpy": "2.4.2",
+    "pandas": "3.0.0",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.2.0"
+  }
+}

@@ -1,0 +1,8 @@
+,accuracy,precision,recall,f1,roc_auc,tempo_treino_segundos
+HistGradientBoosting (otimizado),0.9741,0.9136,0.9263,0.9199,0.9932,1.6178
+HistGradientBoosting,0.97,0.8857,0.9339,0.9092,0.9933,0.641
+XGBoost,0.9699,0.8913,0.9255,0.9081,0.9926,0.2004
+RandomForest,0.9512,0.9274,0.7558,0.8328,0.988,1.1062
+KNN,0.9105,0.8202,0.5676,0.6709,0.9038,0.0215
+LogisticRegression,0.8475,0.5156,0.8518,0.6423,0.9259,0.0512
+Baseline,0.8393,0.0,0.0,0.0,0.5,0.0218
