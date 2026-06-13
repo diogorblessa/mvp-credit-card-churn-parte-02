@@ -100,7 +100,7 @@ jupyter notebook notebooks/desenvolvimento_mvp.ipynb
 | `7` | Baseline e modelos candidatos |
 | `8` | Treinamento e avaliação inicial (validação cruzada) |
 | `9` | Validação e otimização de hiperparâmetros |
-| `10` | Avaliação final no conjunto de teste e análise de erros |
+| `10` | Avaliação final no teste, análise de erros e importância das variáveis |
 | `11` | Comparação final dos modelos |
 | `12` | Boas práticas e rastreabilidade |
 | `13` | Conclusão |
@@ -108,13 +108,20 @@ jupyter notebook notebooks/desenvolvimento_mvp.ipynb
 
 ## 🧠 Hipóteses Investigadas
 
-Hipóteses levantadas na Parte 01 e retomadas aqui (Seção `1.4` do notebook):
+Hipóteses levantadas na Parte 01, retomadas na Seção `1.4` e fechadas na conclusão (Seção `13`) do notebook, com evidências das Seções `4` e `10.2`:
 
-- **H1**: clientes mais inativos tendem a cancelar mais
-- **H2**: clientes que usam pouco o limite do cartão tendem a cancelar mais
-- **H3**: clientes com menos produtos contratados no banco tendem a cancelar mais
-- **H4**: a faixa de renda influencia a chance de cancelamento
-- **H5**: a queda no número de transações ao longo do tempo está ligada ao cancelamento
+- **H1**: clientes mais inativos tendem a cancelar mais. **Veredito:** confirmada, com efeito não
+  linear (churn de `4,48%` com 1 mês inativo para `29,89%` com 4 meses)
+- **H2**: clientes que usam pouco o limite do cartão tendem a cancelar mais. **Veredito:**
+  parcialmente confirmada (correlação na direção esperada, `-0,178`, mas importância quase nula no
+  modelo final)
+- **H3**: clientes com menos produtos contratados no banco tendem a cancelar mais. **Veredito:**
+  confirmada (correlação `-0,150`; 4ª variável mais importante do modelo final)
+- **H4**: a faixa de renda influencia a chance de cancelamento. **Veredito:** não confirmada (churn
+  varia pouco entre as faixas, de `13,48%` a `17,33%`, sem ordem clara)
+- **H5**: a queda no número de transações ao longo do tempo está ligada ao cancelamento.
+  **Veredito:** confirmada, o sinal mais forte (`Total_Trans_Ct` com correlação `-0,371` e maior
+  importância no modelo final)
 
 ## 📊 Modelos e Resultados
 
